@@ -1,6 +1,6 @@
 'use strict';
 
-describe('dashboard', function() {
+xdescribe('dashboard', function() {
 
   describe('index', function() {
     beforeEach(function() {
