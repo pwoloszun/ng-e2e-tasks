@@ -1,1 +1,27 @@
-<p>dashboard-view This is the partial for view 1.</p>
+<div ng-controller="DashboardController">
+  <p>Dashboard</p>
+  <input ng-model="max" type="number"/>
+  <button ng-click="calculate()">Calculate</button>
+  <table border="1" cellpadding="3" cellspacing="0">
+    <thead>
+    <tr>
+      <th>Number</th>
+      <th>Sqrt</th>
+      <th>Pow</th>
+      <th>Log</th>
+      <th>Exp</th>
+      <th>sin</th>
+      <th>asin</th>
+    </tr>
+    </thead>
+    <tr ng-repeat="result in results track by $index">
+      <td>{{::result.value}}</td>
+      <td>{{::result.sqrt}}</td>
+      <td>{{result.pow}}</td>
+      <td>{{result.log}}</td>
+      <td>{{result.exp}}</td>
+      <td>{{result.sin}}</td>
+      <td>{{result.asin}}</td>
+    </tr>
+  </table>
+</div>
