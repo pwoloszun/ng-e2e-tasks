@@ -53,6 +53,8 @@ On Configuration tab set:
   Path to Node: path to node executable . e.g. ‘/usr/bin/node’
   Working directory: your project base path e.g. ‘/usr/sesteva/myTests’
   Path To Node JS App file: path to Protractor cli.js file (e.g. node_modules\protractor\lib\cli.js)
+    "node_modules/protractor/lib/cli.js"
   Application parameters: path to your Protractor configuration file (e.g. protractorConfig.js)
+    "e2e-tests/protractor.conf.js"
 Click OK, place some breakpoints on your js files.
 Click on Debug from the Run menu.
