@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="ng-e2e-tasks">
+<head>
+  <meta charset="utf-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <link rel="stylesheet" href="app.css"/>
+  <title>ng-e2e-tasks</title>
+  <!-- vendor libs -->
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+  <!-- app src -->
+  <script src="app.js"></script>
+  <script src="routes.js"></script>
+  <script src="dashboard/dashboard-view.js"></script>
+  <script src="todo-list/todo-list-view.js"></script>
+  <script src="todo-list/services/todo-list.js"></script>
+  <script src="todo-list/controllers/todo-list-controller.js"></script>
+</head>
+<body>
+<div class="main">
+  <ul class="menu">
+    <li><a ui-sref="dashboard">Dashboard</a></li>
+    <li><a ui-sref="todo-list">TODOs List</a></li>
+  </ul>
+  <div ui-view></div>
+</div>
+</body>
+</html>

@@ -1,0 +1,10 @@
+Protractor docs:
+https://github.com/angular/protractor/blob/master/docs/toc.md
+
+Protractor API:
+http://angular.github.io/protractor/#/api
+
+Jasmine.js docs & API:
+http://jasmine.github.io/2.3/introduction.html
+
+

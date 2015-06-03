@@ -1,0 +1,12 @@
+<p>This is the partial for TODO</p>
+<div ng-controller="TodoListController">
+  <h3 class="todos-header">TODOs List</h3>
+  <input ng-model="title"/>
+  <button ng-click="create(title)">Create</button>
+  <ul class="todos">
+    <li ng-repeat="todo in todoList.todos">
+      {{todo.title}}
+      <button ng-click="remove(todo)">Remove</button>
+    </li>
+  </ul>
+</div>
