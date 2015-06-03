@@ -1,3 +1,5 @@
+Ubuntu:
+------
 ===
 Install Node.js:
 $ sudo apt-get update
@@ -6,6 +8,22 @@ $ sudo apt-get install nodejs
 ===
 Install npm:
 $ sudo npm install -g npm
+
+
+
+
+Windows:
+------
+===
+Install JDK
+
+===
+Install Node.js (with npm)
+
+===
+Install Git (IMPORTANT: with command line support option checked)
+
+
 
 ===
 Install node modules:
@@ -18,7 +36,7 @@ $ bower install
 
 ===
 Run unit tests:
-$ sudo npm test
+$ npm test
 
 ===
 Run e2e tests:
