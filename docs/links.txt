@@ -7,4 +7,5 @@ http://angular.github.io/protractor/#/api
 Jasmine.js docs & API:
 http://jasmine.github.io/2.3/introduction.html
 
-
+Debuging Protractor from WebStorm:
+http://ng-learn.org/2014/02/Debugging_Protractor_from_WebStorm_Intellij/
