@@ -1,7 +1,8 @@
 'use strict';
 
 angular.module('ng-e2e-tasks.dashboard-view', []).controller('Dashboard.ViewCtrl', [
-  function() {
+  "$scope",
+  function($scope) {
 
   }
 ]);
