@@ -58,3 +58,7 @@ On Configuration tab set:
     "e2e-tests/protractor.conf.js"
 Click OK, place some breakpoints on your js files.
 Click on Debug from the Run menu.
+
+
+
+git config --global url.http://.insteadof git://
