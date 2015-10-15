@@ -1,15 +1,21 @@
-function TodoListPage() {
-  this._header = element(by.css('.todos-header'));
-  this._titleInput = element(by.model('title'));
-  this._createButton = element(by.buttonText('Create'));
-  this._todoItems = element.all(by.repeater('todo in todoList.todos'));
+function TodoListPage(browser, element) {
+  this._browser = browser;
+  this._el = element;
+  this._header = this._el(by.css('.todos-header'));
+  this._titleInput = this._el(by.model('title'));
+  this._createButton = this._el(by.buttonText('Create'));
+  this._todoItems = this._el.all(by.repeater('todo in todoList.todos'));
 }
 
-TodoListPage.prototype.getHeader = function() {
-  return this._header;
+TodoListPage.prototype.openPage = function() {
+  this._browser.get('index.html#/todo-list');
 };
 
-TodoListPage.prototype.clickCreate = function() {
+TodoListPage.prototype.getHeaderText = function() {
+  return this._header.getText();
+};
+
+TodoListPage.prototype.clickCreateButton = function() {
   this._createButton.click();
 };
 

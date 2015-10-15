@@ -8,13 +8,13 @@ describe('todo-list', function() {
     var todoPage;
 
     beforeEach(function() {
-      todoPage = new TodoListPage();
-      browser.get('index.html#/todo-list');
+      todoPage = new TodoListPage(browser, element);
+      todoPage.openPage();
     });
 
     describe("view render", function() {
       it('should render TODOs list title', function() {
-        expect(todoPage.getHeader().getText()).toMatch(/TODOs List/);
+        expect(todoPage.getHeaderText()).toMatch(/TODOs List/);
       });
 
       it('should render new TODO title input', function() {
@@ -39,7 +39,7 @@ describe('todo-list', function() {
         });
         title = 'Buy milk';
         todoPage.setTitle(title);
-        todoPage.clickCreate();
+        todoPage.clickCreateButton();
       });
 
       it("should display new TODO at the end of Todos list", function() {
